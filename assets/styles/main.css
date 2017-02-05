@@ -1,0 +1,247 @@
+html,
+body {
+    box-sizing: border-box;
+    color: #93979e;
+    fill: #333;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+
+    background-image: -ms-linear-gradient(top, #000000 0%, #292e33 100%);
+    background-image: -moz-linear-gradient(top, #000000 0%, #292e33 100%);
+    background-image: -o-linear-gradient(top, #000000 0%, #292e33 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #000000), color-stop(100, #292e33));
+    background-image: -webkit-linear-gradient(top, #000000 0%, #292e33 100%);
+    background-image: linear-gradient(to bottom, #000000 0%, #292e33 100%);
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+a {
+    color: #08c;
+    fill: #08c;
+    text-decoration: none;
+}
+a:focus {
+    outline: none;
+    text-decoration: underline;
+}
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 100;
+    margin-bottom: 16px;
+    margin-top: 0;
+}
+h1 svg {
+    height: 45px;
+    max-width: 100%;
+    position: relative;
+    top: 11px;
+    width: 310px;
+}
+@media (min-width: 966px) {
+    h1 {
+        font-size: 48px;
+    }
+}
+h2 {
+    font-size: 32px;
+    font-weight: 300;
+    margin: 0 0 16px;
+    padding: 0;
+}
+h3 {
+    font-size: 24px;
+    font-weight: 600;
+    opacity: 0.8;
+}
+h4 {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+h5 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 3px;
+    margin-top: 0;
+    text-align: left;
+}
+h1, h2, h3, h4, h5 {
+    color: #fff;
+}
+.header-title {
+    display: inline-block;
+    padding: .5rem 1.5rem;
+    margin-bottom: 1rem;
+    border: .2rem solid #32343c;
+    border-radius: .1rem;
+    letter-spacing: 4px;
+    font-weight: 300;
+}
+p {
+    text-align: left;
+    line-height: 1.65;
+}
+p.small-label {
+    font-size: 12px;
+    margin: 0;
+    opacity: 0.8;
+    padding: 0;
+    text-align: center;
+}
+q {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+q::before,
+q::after {
+    content: none;
+}
+@media (min-width: 414px) {
+    q {
+        font-size: 36px;
+    }
+}
+hr {
+    background:#32343c;
+    border:none;
+    height:1px;
+    max-width: 6rem;
+    margin: 3rem auto;
+}
+img {
+    max-width: 100%;
+}
+img.h1 {
+    display: block;
+    height: 27px;
+    margin: 19px auto;
+    opacity: 0.8;
+}
+img.inline {
+    display: inline-block!important;
+    vertical-align: middle;
+}
+body {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+#content-container {
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+@media (min-width: 444px) {
+    .row .column.half {
+        margin: 32px 32px 0;
+        width: calc(50% - 88px);
+    }
+    .column.third {
+        margin: 32px 32px 0;
+        width: calc(33% - 88px);
+    }
+    .column+.column {
+        margin-left: 16px!important;
+    }
+}
+.column.half {
+    text-align: left;
+    vertical-align: middle;
+}
+.column img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.row {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 48px 24px;
+    text-align: center;
+    width: auto;
+}
+.row .row {
+    padding: 24px 0;
+}
+.row ul,
+.row ol {
+    text-align: left;
+}
+.row.docs,
+.row.docs .slide {
+    max-width: 800px;
+}
+.row.docs h2,
+.row.docs h3,
+.row.docs h4 {
+    margin-bottom: 16px;
+    margin-top: 32px;
+    text-align: left;
+}
+.row.docs h4 {
+    font-weight: 400;
+}
+.third h3,
+.third p {
+    text-align: center;
+}
+a.third {
+    color: inherit;
+}
+a.third:hover {
+    color: #08c;
+    fill: #08c;
+}
+.third .fa {
+    font-size: 32px;
+    text-align: center;
+    display: block;
+}
+.warning {
+    color: #fbc02d;
+}
+.row.alert {
+    border: 2px solid #333;
+    border-radius: 6px;
+    max-width: 704px;
+    padding: 24px;
+}
+.row.alert.warning {
+    background-color: #fff9c4;
+    border-color: #fbc02d;
+}
+.column.alert {
+    max-width: calc(100% - 70px);
+}
+.row.alert>.column.alert {
+    color: rgba(0, 0, 0, 0.8);
+}
+.row .column.alert i.fa {
+    font-size: 64px;
+    margin: 8px 0 0;
+}
+.icon {
+    position: relative;
+    text-align: center;
+}
+@media (min-width: 444px) {
+    .icon {
+        position: absolute;
+    }
+    .icon-text {
+        padding-left: 88px;
+    }
+}
